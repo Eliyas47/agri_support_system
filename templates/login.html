@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="existing-user-banner mb-3">
+  <strong>Welcome back!</strong> Log in to continue.
+</div>
+<h2>Login</h2>
+<form method="post" class="auth-form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-primary" type="submit">Login</button>
+</form>
+{% endblock %}

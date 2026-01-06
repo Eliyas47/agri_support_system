@@ -1,0 +1,120 @@
+/* Basic custom styles for Agri Support */
+.new-user-banner{
+	background: linear-gradient(90deg, #e8f7ff, #f0fbff);
+	border-left:6px solid #0d6efd;
+	padding:12px 16px;
+	color:#0b4a83;
+	border-radius:6px;
+}
+.existing-user-banner{
+	background: linear-gradient(90deg,#e9f2ff,#eef6ff);
+	border-left:6px solid #0d6efd;
+	padding:12px 16px;
+	color:#042a66;
+	border-radius:6px;
+}
+.auth-form{max-width:480px}
+footer h5{font-weight:700}
+
+
+/* Page background using uploaded image */
+body{
+	/* Try two images (primary then fallback). Percent-encode spaces in filenames. */
+	background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)), url('/static/images/Agri%20background.jpg') no-repeat center center fixed, url('/static/images/optional%20background.jpg') no-repeat center center fixed;
+	background-size: cover, cover;
+	-webkit-font-smoothing:antialiased;
+	min-height:100vh;
+	background-color: #f6faf2; /* subtle fallback color */
+}
+
+/* Make main container slightly raised over background */
+.container{
+	background: rgba(255,255,255,0.92);
+	padding: 24px;
+	border-radius: 8px;
+	box-shadow: 0 8px 24px rgba(8,35,63,0.08);
+}
+
+.card{ background: rgba(255,255,255,0.98); }
+
+/* Site hero */
+.site-hero{ padding:48px 0; background: linear-gradient(90deg, rgba(13,110,253,0.05), rgba(11,92,215,0.04)); margin-bottom:24px }
+.site-hero .display-5{ font-weight:600; color:#073463 }
+.site-hero .lead{ color:#6e1436 }
+
+/* Image preview in post form */
+#preview{ display:none; max-height:360px; object-fit:cover; border-radius:6px; }
+
+/* Responsive small tweaks */
+@media(max-width:767px){
+	.auth-form{width:100%}
+}
+
+/* Footer blue background and white text for site-footer (avoids bootstrap bg-light conflict) */
+.site-footer{
+	background: linear-gradient(180deg,#0d6efd,#0b5ed7);
+	color: #fff;
+}
+.site-footer h5{ color: #0a070f; }
+.site-footer p{ color: #ff6bda; margin-bottom:0 }
+.site-footer a{ color: #ff6b6b; text-decoration:none }
+.site-footer a:hover{ text-decoration:underline }
+.site-footer hr{ border-color: rgba(255,255,255,0.12) }
+
+/* Remove the white .container overlay inside the footer so blue background shows through */
+.site-footer .container{ background: transparent; box-shadow: none; padding-left: 0.5rem; padding-right: 0.5rem }
+
+/* Pink background panel for dashboard content */
+.dashboard-panel{
+	background: linear-gradient(180deg,#9b1b4e,#e6ffe7); /* soft pink */
+	border: 1px solid rgba(255,20,83,0.08);
+	color: #3d1f2b;
+}
+
+/* Contact panel: gentle teal/pastel background for professional look */
+.contact-panel{
+  background: linear-gradient(180deg,hsla(34, 90%, 42%, 0.644),#e8f7f5);
+    border: 1px solid rgba(8,129,122,0.08);
+   box-shadow: 0 6px 18px rgba(3,54,50,0.06);
+
+}
+.contact-panel h2{ color: #054d47 }
+.contact-panel p{ color: #145a53 }
+.contact-panel .form-control{ background: #f8f5f7d7; }
+
+
+/* Navbar: force brand and links to blue for visibility */
+.navbar .navbar-brand, .navbar .nav-link{
+	color: hsl(216, 87%, 24%) !important;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus{
+	color: #084298c7 !important;
+}
+.navbar .navbar-brand:hover{
+	color: #084298c4 !important;
+}
+.navbar .nav-link.active{
+	color: #084298 !important;
+	font-weight:600;
+}
+/* Navbar: blue background and white links */
+.navbar{
+	background: linear-gradient(90deg,#0d6efd,#0b5ed7);
+}
+.navbar .navbar-brand, .navbar .nav-link{
+	color: #f1e6ed !important;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus{
+	color: #dbe9ff !important;
+}
+.navbar .navbar-brand:hover{
+	color: #dbe9ff !important;
+}
+.navbar .nav-link.active{
+	color: #fff !important;
+	font-weight:600;
+}
+
+
+
+

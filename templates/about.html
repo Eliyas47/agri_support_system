@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <h2>About agri_support_system</h2>
+    <p>This site is built from the <strong>agri_support_system</strong> Django project — a simple platform where farmers can post crop problems (with images) and get practical support from the community.</p>
+    <p>The live demo and this codebase are intended for learning, testing, and small deployments. For the full source and to contribute, see the repository below.</p>
+    <p>Project repository: <a href="https://github.com/Eliyas47/agri_support_system" target="_blank" rel="noopener">github.com/Eliyas47/agri_support_system</a></p>
+    <p><a class="btn btn-outline-primary" href="https://github.com/Eliyas47/agri_support_system" target="_blank" rel="noopener">View Source on GitHub</a></p>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h5>Quick Links</h5>
+      <ul class="list-unstyled">
+        <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+        <li><a href="{% url 'post_problem' %}">Post Problem</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
